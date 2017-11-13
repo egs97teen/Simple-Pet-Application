@@ -1,0 +1,345 @@
+/* Page Styling
+---------------------------------------------------------------------- */
+
+body {
+	background: #fff;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+}
+
+h1, h3 {
+	color: #545557;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	color: #52bdff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.info {
+	color: #545557;
+	font-family: 'Abel', sans-serif;
+}
+
+/* Header & Navigation Bar
+---------------------------------------------------------------------- */
+
+#header {
+	padding: 20px;
+	z-index: 1;
+}
+
+#pet_logo {
+	width: 35%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#header_heading {
+	display: inline-block;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #88ab6f;
+	vertical-align: middle;
+}
+
+.heading {
+	display: block;
+}
+
+#navbar {
+	padding-top: 5%;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	margin: 0% 5% 0% 5%;
+}
+
+li a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+
+/* Main Content Section
+---------------------------------------------------------------------- */
+
+/* About Page
+---------------------------------------------------------------------- */
+
+#about {
+	text-align: center;
+}
+#about p {
+	font-family: 'Abel', sans-serif;
+	color: #545557;
+}
+/* Add New Pet
+---------------------------------------------------------------------- */
+
+#new_pet {
+	display: none;
+}
+
+#new_pet_heading {
+	text-align: center;
+}
+
+.text_input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+	position: relative;
+	width: 80%;
+	-webkit-transition: border-bottom 0.5s;
+	overflow: hidden;
+}
+
+.text_input::-webkit-input-placeholder {
+	transition: font-size 0.5s ease-in-out;
+	-webkit-transition: font-size 0.5s ease-in-out;
+	font-size: 16px;
+	font-family: 'Abel', sans-serif;
+	color: #545557;
+}
+
+.text_input:hover::-webkit-input-placeholder {
+	color: #52bdff;
+	font-size: 20px;
+}
+
+.text_input:hover {
+	border-bottom: 1px solid #52bdff;
+}
+
+label {
+	font-family: 'Abel', sans-serif;
+}
+
+select:focus {
+	outline: 0;
+	outline-style: none;
+	outline-width: 0;
+}
+
+input[type="text"] {
+	color: #52bdff;
+}
+
+#pet_preview img {
+	width: 100%;
+}
+
+#text_description {
+	width: 100%;
+}
+
+#submit_button {
+	font-family: 'Abel', sans-serif;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	background-image: linear-gradient(#52bdff, #52bdff);
+	background-position: 50% 50%;
+	background-size: 0% 100%;
+	transition: background-size .5s, color .5s ease-in-out;
+	border: 2px solid #52bdff;
+	border-radius: 5px;
+	width: 100px;
+}
+
+#submit_button:hover {
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+/* List All Pets
+---------------------------------------------------------------------- */
+
+#show_all_pets {
+	display: none;
+	padding: 0% 5% 0% 5%;
+	text-align: center;
+}
+
+#show_pet {
+	display: none;
+}
+
+.petDiv {
+	height: 200px;
+	width: 400px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	background-color: rgba(200, 235, 255, 0);
+}
+
+.petImg {
+	vertical-align: top;
+	height: 90%;
+	width: 90%;
+}
+
+#show_all {
+	width: 100%;
+	padding: 1%;
+	background-color: rgba(200, 235, 255, 0.29);
+}
+
+/* Individual Pet Info
+---------------------------------------------------------------------- */
+
+#pet_name {
+	text-align: center;
+}
+
+#show_pet_image {
+	width: 100%;
+}
+
+#show_pet ul {
+	padding: 0;
+	width: 100%;
+}
+
+#show_pet li {
+	display: inline-block;
+}
+
+#delete {
+	color: red;
+}
+
+#delete:hover {
+	color: #bf0e1f
+}
+
+/* Button Controls
+---------------------------------------------------------------------- */
+
+button {
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	background-image: linear-gradient(#52bdff, #52bdff);
+	background-position: 50% 50%;
+	background-size: 0% 100%;
+	transition: background-size .5s, color .5s ease-in-out;
+	border: 2px solid #52bdff;
+	border-radius: 5px;
+	width: 100px;
+}
+
+button:hover {
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+button:focus {
+	outline: 0;
+	outline-style: none;
+	outline-width: 0;
+}
+
+.filter_buttons ul {
+	padding: 0;
+	width: 100%;
+}
+
+.filter_buttons li {
+	margin: 0;
+}
+
+/* Target Elements On List All Pets
+---------------------------------------------------------------------- */
+
+.petDiv {
+	padding: 1%;
+}
+
+.mix, .gap {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.mix {
+	background: #c8ebff;
+	background: rgba(200, 235, 255, 0);
+	position: relative;
+}
+
+.mix:before {
+	content: '';
+	display: inline-block;
+	padding-top: 56.25%;
+}
+
+.petDiv img {
+	opacity: 1;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+}
+
+.petDiv img:hover {
+	opacity: 0.5;
+}
+
+.petDiv img:hover+.petName {
+	color: #52bdff;
+	font-size: 20px;
+}
+
+.petName {
+	color: #545557;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	-webkit-transition: font-size 0.5s;
+}
+
+/* Grid Breakpoints On List All Pets
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix, .gap {
+	width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 541px) {
+	.mix, .gap {
+		width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+	}
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+	.mix, .gap {
+		width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+	}
+}
+
+/* 5 Columns */
+
+@media screen and (min-width: 1281px) {
+	.mix, .gap {
+		width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+	}
+}

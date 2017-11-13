@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Simple Pet Application</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="header">
+			<div class="col-sm-6" id="logo">
+				<img alt="logo" id="pet_logo" src="img/logo.png">
+				<p id="header_heading"><span class="heading">Simple Pet</span><span class="heading">Application</span></p>
+			</div>
+			<div class="col-sm-6" id="navbar">
+				<ul>
+					<li class="navbar_item">
+						<a href="" id="about_us">ABOUT</a>
+					</li>
+					<li class="navbar_item">
+						<a href="" id="add_new">ADD NEW PET</a>
+					</li>
+					<li class="navbar_item">
+						<a href="" id="all_pets">VIEW ALL PETS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="main">
+
+				<!-- About Section -->
+				<div class="col" id="about">
+					<h1>About This Application</h1>
+					<p>This is a simple pet application built with HTML, CSS, and JavaScript. Created with minimal time, this application allows users to create a visual list of pets. All functionality of this site is built using JavaScript and jQuery.</p>
+					<p>If given more time, this site would prove to be more efficient if given a proper back-end and non-relational database. I would also like to refactor this project using React.js as a front-end framework for a more fluid and optimized user-experience. I also wouldn't use annoying alert messages!</p>
+					<p>Created by Eric Sagata</p>
+				</div>
+
+				<!-- Add New Pet -->
+				<div id="new_pet">
+					<h1 id="new_pet_heading">Add A New Pet</h1>
+					<form id="pet_form" name="pet_form">
+						<div class="row">
+							<div class="col-sm-6" id="pet_form_info">
+								<p><input class="text_input" name="name" placeholder="Name" type="text"></p>
+								<p id="type"><label>Type: <select name="type">
+									<option disabled selected>
+										Select a type
+									</option>
+									<option value="dog">
+										Dog
+									</option>
+									<option value="cat">
+										Cat
+									</option>
+									<option value="bird">
+										Bird
+									</option>
+									<option value="reptile">
+										Reptile
+									</option>
+									<option value="other">
+										Other
+									</option>
+								</select></label></p>
+								<p><input class="text_input" name="age" placeholder="Age" type="text"></p>
+								<p><input class="text_input" name="breed" placeholder="Breed" type="text"></p>
+								<p id="description"><label>Description:</label></p>
+								<textarea id="text_description" name="description" rows="5"></textarea>
+							</div>
+							<div class="col-sm-6" id="pet_form_image">
+								<p><input class="text_input" name="image" placeholder="Image URL" type="text"></p>
+								<div id="pet_preview"></div>
+							</div>
+						</div>
+						<p><input id="submit_button" type="submit" value="Submit"></p>
+					</form>
+				</div>
+
+				<!-- View All Pets -->
+				<div id="show_all_pets">
+					<h1 id="show_all_header">Pets</h1>
+					<div class="row filter_buttons" id="filter_buttons">
+						<ul>
+							<li><button class="control" data-filter="all" type="button">All</button></li>
+							<li><button class="control" data-filter=".dog" type="button">Dog</button></li>
+							<li><button class="control" data-filter=".cat" type="button">Cat</button></li>
+							<li><button class="control" data-filter=".reptile" type="button">Reptile</button></li>
+							<li><button class="control" data-filter=".bird" type="button">Bird</button></li>
+							<li><button class="control" data-filter=".other" type="button">Other</button></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div id="show_all">
+							<div class="gap"></div>
+							<div class="gap"></div>
+							<div class="gap"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- View Individual Pet -->
+				<div id="show_pet">
+					<div class="row">
+						<div class="col-sm-6" id="show_pet_info">
+							<h1 id="pet_name"></h1>
+							<h3>Breed: <span class="info" id="pet_breed"></span></h3>
+							<h3>Age: <span class="info" id="pet_age"></span></h3>
+							<h3 class="info" id="pet_description"></h3>
+						</div>
+						<div class="col-sm-6" id="show_pet_image"></div>
+						<ul>
+							<li>
+								<a href="" id="back">GO BACK</a>
+							</li>
+							<li>
+								<a href="" id="delete">DELETE</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+	</script> 
+	<script src="js/mixitup.min.js">
+	</script> 
+	<script src="js/main.js">
+	</script>
+</body>
+</html>
